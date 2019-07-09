@@ -53,7 +53,8 @@ while True:
                         file_manager.move_cmd(f, db_query.get_new_name(f), ftp_folder_path, db_query.get_ams_path())
                         db_query.update_media_temp(f, "1", db_query.get_new_name(f))
                     except:
-                        log_writer.write_log("File %s not found", f)
+                        log_writer.write_log("File %s \not found", f)
     time.sleep(10)
 # ================================
+# ============================
 
